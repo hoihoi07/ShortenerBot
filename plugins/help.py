@@ -21,7 +21,7 @@ LOGGER = logging.getLogger(__name__)
 async def help(client, message: Message):
     if not await AuthUserCheck(message): return
     tumad = message.from_user.mention()
-    help_msg = f"<a href='https://github.com/HuzunluArtemis/ShortenerBot'>🍁</a> Esenlikler / Hi {tumad}\n\n"
+    help_msg = f"<a href='https://t.me/jettastic'>🍁</a> Jettastic / Hi {tumad}\n\n"
     apireq = ["shorte.st", "bc.vc", "pubiza", "linkvertise", "bit.ly", "post", "cutt.ly", "adf.ly", "shortcm", "tinycc", "ouo.io"]
     free = ["v.gd", "da.gd", "is.gd", "ttm.sh", "clck.ru", "chilp.it", "osdb", "tinyurl", "owly"]
     apireq = getListAsString(apireq)
